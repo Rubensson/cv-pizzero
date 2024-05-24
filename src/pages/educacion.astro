@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import LinkBtn from "../components/LinkBtn.astro";
 import SectionTitle from "../components/SectionTitle.astro";
-
+import SectionNav from "../components/SectionNav.astro";
 ---
 <Layout title="Maestro Pizzero / Educación">
     <div id="info-container" class=" container mx-auto p-4 ">
@@ -89,7 +89,11 @@ import SectionTitle from "../components/SectionTitle.astro";
     </div>  
     </div>  
         
-        <LinkBtn title="Objetivos" link="/objetivos"/>
+    <div class="w-full flex gap-4 justify-center">
+
+    <SectionNav/>
+    <LinkBtn title="Sobre mí" link="/about"/>
+</div>
     </div>
 
 </Layout>

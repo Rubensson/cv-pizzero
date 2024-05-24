@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import LinkBtn from "../components/LinkBtn.astro";
 import SectionTitle from "../components/SectionTitle.astro";
+import SectionNav from "../components/SectionNav.astro";
 
 
 ---
@@ -12,9 +13,9 @@ import SectionTitle from "../components/SectionTitle.astro";
 <div id="presentacion-text" class="bg-slate-50 p-2 rounded-md border border-cyan-600 mb-8">
     <div class="mb-4">
         <h3 id="trabajo-title" class="font-bold text-cyan-600">Pizzero</h3>
-        <p class="text-sm font-bold text-slate-600 ">EL SALON Pizzería, Panaderia artesanal, Catering - San Lorenzo</p>
+        <p class="text-sm font-bold text-slate-600 ">EL SALON Pizzería, Panadería artesanal, Catering - San Lorenzo</p>
         <p class="mb-2"> <i class="text-xs text-slate-600">2020 a Actualmente</i></p>
-        <p id="trabajo-description" class="text-sm">Elaboración de pizza al molde (estilo porteña), con masa madre y madurada, y otros fermentos naturales. En eventos y venta al publico. Panificación artesanal variada, sandwhichería. Productos de autoría propia. Preelaboración de ingredientes. Responsable del area, personal a cargo, stock, limpieza y mantenimiento.</p>
+        <p id="trabajo-description" class="text-sm">Elaboración de pizza al molde (estilo porteña), con masa madre, madurada, y otros fermentos naturales. En eventos y venta al público. Panificación artesanal variada, sandwichería. Productos de autoría propia. Preelaboración de ingredientes. Responsable del área, personal a cargo, stock, limpieza y mantenimiento.</p>
                 <hr class="mt-2">
 
     </div>  
@@ -62,7 +63,7 @@ import SectionTitle from "../components/SectionTitle.astro";
         <h3 id="trabajo-title" class="font-bold text-cyan-600"> Ayudante de cocina - Logística</h3>
         <p class="text-sm font-bold text-slate-600 ">SUCATA S.A. (Petrobras) - San Lorenzo</p>
         <p class="mb-2"> <i class="text-xs text-slate-600">2008 a 2011</i></p>
-        <p id="trabajo-description" class="text-sm"> Ayudante de cocina, limpieza y mantenimiento, logistica en comedor de estación de servicios. </p>
+        <p id="trabajo-description" class="text-sm"> Ayudante de cocina, limpieza y mantenimiento, logística en comedor de estación de servicios. </p>
         <hr class="mt-2">
     </div>
 <div class="mb-4">
@@ -75,7 +76,11 @@ import SectionTitle from "../components/SectionTitle.astro";
 
 
 </div>    
-        <LinkBtn title="Educación" link="/educacion"/>
+  <div class="w-full flex gap-4 justify-center">
+
+    <SectionNav/>
+    <LinkBtn title="Educación" link="/educacion"/>
+</div>
     </div>
 
 </Layout>

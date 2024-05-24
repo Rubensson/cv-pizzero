@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import LinkBtn from "../components/LinkBtn.astro";
 import SectionTitle from "../components/SectionTitle.astro";
-
+import SectionNav from "../components/SectionNav.astro";
 ---
 <Layout title="Maestro Pizzero / Sobre mí">
 
@@ -22,7 +22,7 @@ Después de explorar varias pizzerías de renombre, aprender acerca de masas, ho
     </p>
     <h3 id="educacion-title" class="font-bold text-cyan-600 mb-2">Fuera de la cocina</h3>
      <p class="font-roboto mb-4">
-   Sin duda, la cocina es siempre el lugar donde prefiero estar, tanto en lo laboral como en mi vida privada. También he trabajado en otras industrias y emprendimientos personales, aprovechando mis conocimientos técnicos y habilidades en informática. En los últimos años me he especializado en Programación y Desarrollo Web, mi objetivo a mediano plazo es dedicarme a esta área, sin abandonar del todo la cocina. Sueño con tener una pizzería cuando sea el momento adecuado.
+ Sin duda, la cocina es siempre el lugar donde prefiero estar, tanto en lo laboral como en mi vida privada. También he trabajado en otras industrias y emprendimientos personales, aprovechando mis conocimientos técnicos y habilidades en informática. En los últimos años, me he especializado en Programación y Desarrollo Web, mi objetivo a mediano plazo es dedicarme a esta área, sin abandonar del todo la cocina. Sueño con tener una pizzería cuando sea el momento adecuado.
     </p>
         <h3 id="educacion-title" class="font-bold text-cyan-600 mb-2">Mis pasatiempos</h3>
  
@@ -31,8 +31,11 @@ Aparte de la cocina y la programación, disfruto de actividades como la lectura,
     </p>
     </div>  
    
-        
-        <LinkBtn title="Galería" link="/galeria"/>
+          <div class="w-full flex gap-4 justify-center">
+
+    <SectionNav/>
+    <LinkBtn title="Galería" link="/galeria"/>
+</div>
     </div>
 
 

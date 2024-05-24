@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import LinkBtn from "../components/LinkBtn.astro";
 import SectionTitle from "../components/SectionTitle.astro";
-
+import SectionNav from "../components/SectionNav.astro";
 ---
 <Layout title="Maestro Pizzero / Información Personal">
 
@@ -20,7 +20,14 @@ import SectionTitle from "../components/SectionTitle.astro";
 <p class="mb-2"><span class="font-bold">Teléfono:</span> 3476 231950</p>
 
 </div>
-        <LinkBtn title="Experiencia Laboral" link="/exp-laboral"/>
+<div class="w-full flex gap-4 justify-center">
+
+    <SectionNav/>
+    <LinkBtn title="Experiencia Laboral" link="/exp-laboral"/>
+</div>
+
+
+
     </div>
     
 
